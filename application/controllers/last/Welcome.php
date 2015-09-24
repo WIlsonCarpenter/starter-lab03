@@ -11,7 +11,7 @@ class Welcome extends Application {
     //-------------------------------------------------------------
 
     function index() {
-        $this->data['pagebody'] = 'justone';    // this is the view we want shown
+        $this->data['pagebody'] = 'justone';
         
         $source = $this->quotes->last();
         $this->data['who'] = $source['who'];
