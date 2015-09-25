@@ -40,9 +40,11 @@
 
 $route['default_controller'] = "welcome";
 $route['sleep'] = "first/zzz";
-$route['lock/(:any)/(:any)'] = "welcome/shucks";
-$route['show/(:num)'] = "first/gimme/3";
+$route['lock/(.*)'] = "welcome/shucks";
+$route['show/(:num)'] = "first/gimme/$1";
 $route['dunno'] = "guess";
+$route['([a-z]{4})/bingo'] = 'last/bingo';
+//$route['comp4711/wisdom'] = '/bingo';
 $route['404_override'] = '';
 
 
